@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 80vh;
+    background: url(./img/baner5.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+
+}
+nav{
+    height: 60px;
+    background:#063247;
+    opacity: 0.9;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.4);
+    
+}
+.navigation{
+    display: flex;
+   
+    justify-content: space-between;
+}
+nav img{
+    margin: 5px 100px;
+    align-items: center;
+    width: 100px;
+    cursor: pointer;
+    
+}
+nav img:hover{
+    box-shadow: 0 0 25px 10px rgba(2, 252, 23, 0.2);
+    opacity: 0.5;
+    rotate: 360deg;
+    transition: 0.8s;
+}
+nav ul{
+   margin-right: 30px;
+}
+nav ul li{
+
+    display: inline-block;
+}
+nav ul li a{
+    color:#fff;
+    font-size: 1.05rem;
+   
+    display: block;
+    padding: 0 25px;
+    line-height: 60px;
+    background: #063247;
+    transition: 0.7s;
+
+}
+nav ul li a:hover{
+    background: #346880;
+    transition: 0.9s;
+}
+nav ul ul{
+    position: absolute;
+    top: 60px;
+    border-top: 3px solid #23dbdb;
+    visibility: hidden  ;
+    transition: 0.1s;
+    
+    
+
+}
+nav ul li:hover ul{
+    visibility: visible;
+    top:60px;
+    transition: 0.9s linear;
+   
+}
+nav ul ul li{
+    display: list-item;
+    position: relative;
+    
+
+}
+nav ul ul li{
+    background: #346880;
+    
+    
+}
+nav li button{
+    padding: 15px 20px;
+}
+nav button{
+    padding: 0 25px;
+    border: none;
+    border-radius: 1px;
+    margin-right: 100px;
+    font-size: 1.05rem;
+    background: rgb(252, 82, 82);
+    
+}
+nav button:hover{
+    background: #346880;    
+    color: white;
+    transition: 0.5s linear;
+    cursor: pointer;
+    
+}
+.header-content{
+    width: 60%;
+    margin: 12% auto;
+    padding: 20px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    
+}
+.header-content h1{
+    text-align: center;
+    margin: 10px;
+    color:aliceblue;
+    font-size: 3rem;
+    letter-spacing: 1px;
+
+}
+.header-content p{
+    color: aliceblue;
+    text-align: center;
+    letter-spacing:0.1rem;
+    font-family:cursive;
+    margin: 10px;
+}
+
+.header-content button{
+    margin: auto;
+    background-color: #063247;
+    color: aliceblue;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.header-content button:hover{
+    opacity: 0.8;
+    color: #23dbdb;
+}
